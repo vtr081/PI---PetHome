@@ -27,6 +27,8 @@
         <a href="#historias">Histórias</a>
         <a href="#contato">Contato</a>
         <a href="#ajudar">Como ajudar</a>
+        <a href="#" class="abrir-cadastro-link">Cadastre-se</a>
+        <a href="#" class="abrir-perfil-link" id="linkAbrirPerfilMobile" hidden>Meu perfil</a>
     </nav>
     <div class="nav-actions">
         <button class="icon-btn" aria-label="Buscar">
@@ -35,12 +37,17 @@
         <button class="icon-btn" aria-label="Favoritos">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 5c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
         </button>
+        <button type="button" class="btn btn-ghost" id="btnAbrirCadastro">Cadastre-se</button>
+        <button type="button" class="perfil-trigger" id="btnAbrirPerfil" hidden>
+            <span class="perfil-avatar" id="perfilAvatarIniciais"></span>
+            <span class="perfil-nome" id="perfilNomeCurto"></span>
+        </button>
         <a href="#adotar" class="btn btn-primary">Quero Adotar</a>
-    </div>
+        </div>
         <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#123B34" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
         </button>
-</div>
+    </div>
 </header>
 
 <main>
@@ -52,34 +59,34 @@
             <h1 style="margin-top:20px;">Adote um amigo,<br>mude uma <span class="accent">vida</span>.</h1>
             <p class="lede">Mais de 1.200 cães e gatos resgatados esperando por um lar cheio de amor. Filtre por idade, comportamento e localização e encontre o companheiro perfeito em poucos cliques.</p>
             <div class="hero-cta">
-            <a href="#adotar" class="btn btn-primary">Ver animais disponíveis</a>
+                <a href="#adotar" class="btn btn-primary">Ver animais disponíveis</a>
             <a href="#como-funciona" class="btn btn-ghost">Como funciona</a>
         </div>
-    <div class="hero-proof">
-        <div class="avatar-stack">
-            <span><img src="https://loremflickr.com/80/80/dog,puppy" alt=""></span>
-            <span><img src="https://loremflickr.com/80/80/cat,kitten" alt=""></span>
-            <span><img src="https://loremflickr.com/80/80/dog,shelter" alt=""></span>
-        </div>
-        <p><strong>3.400+ adoções</strong> realizadas com sucesso</p>
+        <div class="hero-proof">
+            <div class="avatar-stack">
+                <span><img src="https://loremflickr.com/80/80/dog,puppy" alt=""></span>
+                <span><img src="https://loremflickr.com/80/80/cat,kitten" alt=""></span>
+                <span><img src="https://loremflickr.com/80/80/dog,shelter" alt=""></span>
+            </div>
+            <p><strong>3.400+ adoções</strong> realizadas com sucesso</p>
         </div>
     </div>
 
     <div class="hero-art">
         <div class="blob"></div>
             <div class="hero-photo">
-                <img src="https://loremflickr.com/680/800/dog,rescue" alt="Cachorro resgatado esperando para ser adotado">
+            <img src="https://loremflickr.com/680/800/dog,rescue" alt="Cachorro resgatado esperando para ser adotado">
             </div>
-    <div class="float-card c1">
-        <div class="pic"><img src="https://loremflickr.com/84/84/dog,mutt" alt=""></div>
+        <div class="float-card c1">
+            <div class="pic"><img src="https://loremflickr.com/84/84/dog,mutt" alt=""></div>
             <div><div class="name">Thor</div><div class="meta">Vira-lata · 2 anos</div></div>
         </div>
         <div class="float-card c2">
             <div class="pic"><img src="https://loremflickr.com/84/84/cat,kitten" alt=""></div>
             <div><div class="name">Mel</div><div class="meta">Gata SRD · 8 meses</div></div>
         </div>
+        </div>
     </div>
-</div>
 </section>
 
 <!-- COMO FUNCIONA -->
@@ -96,7 +103,7 @@
             <h3>Crie seu cadastro</h3>
             <p>Faça login como adotante ou como abrigo e monte seu perfil em poucos minutos, direto do celular ou do computador.</p>
         </div>
-    <div class="step">
+        <div class="step">
             <div class="num">2</div>
             <h3>Filtre o seu match</h3>
             <p>Use os filtros de idade, comportamento e localização para encontrar animais compatíveis com sua rotina e sua casa.</p>
@@ -105,8 +112,8 @@
             <div class="num">3</div>
             <h3>Conheça e adote</h3>
             <p>Converse com o abrigo responsável, agende uma visita e leve para casa um novo membro da família — de graça.</p>
+            </div>
         </div>
-    </div>
     </div>
 </section>
 
@@ -118,48 +125,48 @@
             <h2 style="margin-top:16px;">Animais esperando por um lar</h2>
             <p>Todos os perfis são verificados pelos abrigos parceiros antes de entrar no site.</p>
         </div>
-        <div class="filter-row">
-            <span class="chip active" data-filter="todos">Todos</span>
-            <span class="chip" data-filter="caes">Cães</span>
-            <span class="chip" data-filter="gatos">Gatos</span>
-            <span class="chip" data-filter="filhotes">Filhotes</span>
-            <span class="chip" data-filter="idosos">Idosos</span>
-        </div>
+    <div class="filter-row">
+        <span class="chip active" data-filter="todos">Todos</span>
+        <span class="chip" data-filter="caes">Cães</span>
+        <span class="chip" data-filter="gatos">Gatos</span>
+        <span class="chip" data-filter="filhotes">Filhotes</span>
+        <span class="chip" data-filter="idosos">Idosos</span>
+    </div>
     <div class="pet-grid">
         <div class="pet-card" data-categories="caes">
             <div class="pet-photo"><img src="https://loremflickr.com/400/320/dog,mutt" alt="Thor, cachorro vira-lata caramelo"></div>
             <div class="pet-body">
-                <div class="top"><h4>Thor</h4><button class="heart" aria-pressed="false" aria-label="Favoritar Thor">♡</button></div>
-                <div class="breed">Vira-lata · 2 anos · Recife, PE</div>
-                <div class="tag-row"><span class="tag">Dócil</span><span class="tag">Vacinado</span></div>
-            </div>
+            <div class="top"><h4>Thor</h4><button class="heart" aria-pressed="false" aria-label="Favoritar Thor">♡</button></div>
+            <div class="breed">Vira-lata · 2 anos · Recife, PE</div>
+            <div class="tag-row"><span class="tag">Dócil</span><span class="tag">Vacinado</span></div>
+        </div>
         </div>
     <div class="pet-card" data-categories="gatos filhotes">
-        <div class="pet-photo"><img src="https://loremflickr.com/400/320/kitten,cat" alt="Mel, gata SRD filhote"></div>
-        <div class="pet-body">
+            <div class="pet-photo"><img src="https://loremflickr.com/400/320/kitten,cat" alt="Mel, gata SRD filhote"></div>
+            <div class="pet-body">
             <div class="top"><h4>Mel</h4><button class="heart" aria-pressed="false" aria-label="Favoritar Mel">♡</button></div>
             <div class="breed">Gata SRD · 8 meses · Caruaru, PE</div>
             <div class="tag-row"><span class="tag">Brincalhona</span><span class="tag">Castrada</span></div>
         </div>
         </div>
-    <div class="pet-card" data-categories="caes idosos">
-        <div class="pet-photo"><img src="https://loremflickr.com/400/320/poodle,dog" alt="Bidu, poodle misto idoso"></div>
-        <div class="pet-body">
+        <div class="pet-card" data-categories="caes idosos">
+            <div class="pet-photo"><img src="https://loremflickr.com/400/320/poodle,dog" alt="Bidu, poodle misto idoso"></div>
+            <div class="pet-body">
             <div class="top"><h4>Bidu</h4><button class="heart" aria-pressed="false" aria-label="Favoritar Bidu">♡</button></div>
             <div class="breed">Poodle misto · 5 anos · Gravatá, PE</div>
             <div class="tag-row"><span class="tag">Calmo</span><span class="tag">Idoso</span></div>
         </div>
         </div>
-    <div class="pet-card" data-categories="gatos">
-        <div class="pet-photo"><img src="https://loremflickr.com/400/320/orange-cat,cat" alt="Nina, gata laranja adulta"></div>
-        <div class="pet-body">
+        <div class="pet-card" data-categories="gatos">
+            <div class="pet-photo"><img src="https://loremflickr.com/400/320/orange-cat,cat" alt="Nina, gata laranja adulta"></div>
+            <div class="pet-body">
             <div class="top"><h4>Nina</h4><button class="heart" aria-pressed="false" aria-label="Favoritar Nina">♡</button></div>
             <div class="breed">Gata laranja · 1 ano · Caruaru, PE</div>
             <div class="tag-row"><span class="tag">Sociável</span><span class="tag">Vacinada</span></div>
+            </div>
         </div>
         </div>
     </div>
-</div>
 </section>
 
 <!-- BENEFÍCIOS -->
@@ -173,33 +180,33 @@
     <div class="benefits">
         <div class="benefit">
             <div class="ic">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 18h6"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 18h6"/></svg>
             </div>
             <h3>Responsivo em todas as telas</h3>
             <p>Navegue e adote pelo celular, tablet ou computador, sem perder nenhum recurso.</p>
         </div>
-    <div class="benefit">
-        <div class="ic">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 4 12 14.01l-3-3"/><path d="M21 12v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h11"/></svg>
-        </div>
+        <div class="benefit">
+            <div class="ic">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 4 12 14.01l-3-3"/><path d="M21 12v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h11"/></svg>
+            </div>
             <h3>Perfis verificados</h3>
             <p>Idade, comportamento e histórico de cada animal são confirmados junto ao abrigo.</p>
         </div>
-    <div class="benefit">
-        <div class="ic">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-        </div>
-            <h3>Busca por localização</h3>
-            <p>Filtre abrigos e animais mais próximos de você para facilitar visitas e retirada.</p>
-        </div>
-    <div class="benefit">
-        <div class="ic">
+        <div class="benefit">
+            <div class="ic">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h3>Busca por localização</h3>
+                <p>Filtre abrigos e animais mais próximos de você para facilitar visitas e retirada.</p>
+            </div>
+        <div class="benefit">
+            <div class="ic">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             </div>
             <h3>Cadastro simples para abrigos</h3>
             <p>Qualquer abrigo pode publicar seus animais e ganhar mais visibilidade em minutos.</p>
         </div>
-    </div>
+        </div>
     </div>
 </section>
 
@@ -207,28 +214,28 @@
 <section class="section" id="ajudar">
     <div class="wrap">
         <div class="banner">
-            <div>
+        <div>
             <h2>Não pode adotar agora? Ajude de outro jeito.</h2>
             <p>Doações, apadrinhamento e divulgação também mudam vidas. Toda ajuda chega direto aos abrigos parceiros do PetHome.</p>
         </div>
-    <div class="actions">
-        <a href="#" class="btn btn-light">Quero doar</a>
-        <a href="#" class="btn btn-ghost" style="border-color:#fff; color:#fff;">Ser voluntário</a>
+        <div class="actions">
+            <a href="#" class="btn btn-light">Quero doar</a>
+            <a href="#" class="btn btn-ghost" style="border-color:#fff; color:#fff;">Ser voluntário</a>
+            </div>
         </div>
-    </div>
     </div>
 </section>
 </main>
 
 <footer id="contato">
-    <div class="wrap">
-        <div class="foot-grid">
+<div class="wrap">
+    <div class="foot-grid">
         <div>
-            <span class="logo">
-                <svg class="mark" viewBox="0 0 40 40" fill="none">
-                <rect x="1" y="1" width="38" height="38" rx="12" fill="#EAF4EE"/>
-                <path d="M20 9c-6 4-11 9-11 15a11 11 0 0 0 22 0c0-6-5-11-11-15Z" fill="#123B34"/>
-                <path d="M20 15.5c-2.6 0-4.6 2-4.6 4.4 0 3.6 4.6 7.1 4.6 7.1s4.6-3.5 4.6-7.1c0-2.4-2-4.4-4.6-4.4Z" fill="#FF6B4A"/>
+        <span class="logo">
+            <svg class="mark" viewBox="0 0 40 40" fill="none">
+            <rect x="1" y="1" width="38" height="38" rx="12" fill="#EAF4EE"/>
+            <path d="M20 9c-6 4-11 9-11 15a11 11 0 0 0 22 0c0-6-5-11-11-15Z" fill="#123B34"/>
+            <path d="M20 15.5c-2.6 0-4.6 2-4.6 4.4 0 3.6 4.6 7.1 4.6 7.1s4.6-3.5 4.6-7.1c0-2.4-2-4.4-4.6-4.4Z" fill="#FF6B4A"/>
             </svg>
         PetHome
         </span>
@@ -259,6 +266,199 @@
     </div>
 </div>
 </footer>
+
+<!-- MODAL DE CADASTRO -->
+<div class="modal-overlay" id="modalCadastro" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+        <button type="button" class="modal-close" id="btnFecharCadastro" aria-label="Fechar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+
+    <div class="modal-head">
+        <span class="eyebrow">🐾 Cadastro</span>
+        <h2 id="modalTitulo">Crie sua conta no PetHome</h2>
+        <p>Escolha o tipo de cadastro para continuar.</p>
+    </div>
+
+    <div class="tabs" role="tablist">
+        <button type="button" class="tab active" data-tab="adotante" role="tab" aria-selected="true">Sou Adotante</button>
+        <button type="button" class="tab" data-tab="instituicao" role="tab" aria-selected="false">Sou Instituição</button>
+    </div>
+
+    <p class="form-msg" id="formMsg" hidden></p>
+
+<!-- FORM ADOTANTE -->
+    <form class="cadastro-form active" id="formAdotante" data-tab-panel="adotante" novalidate>
+        <div class="form-grid">
+            <label class="field">
+                <span>Nome completo</span>
+                <input type="text" name="nome" required autocomplete="name">
+            </label>
+            <label class="field">
+                <span>CPF</span>
+                <input type="text" name="cpf" required inputmode="numeric" placeholder="000.000.000-00" maxlength="14">
+            </label>
+            <label class="field">
+                <span>E-mail</span>
+                <input type="email" name="email" required autocomplete="email">
+            </label>
+            <label class="field">
+                <span>Telefone / WhatsApp</span>
+                <input type="tel" name="telefone" required placeholder="(00) 00000-0000">
+            </label>
+            <label class="field">
+                <span>Cidade</span>
+                <input type="text" name="cidade" required>
+            </label>
+        <label class="field">
+            <span>Estado</span>
+            <select name="estado" required>
+                <option value="">Selecione</option>
+                <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option>
+                <option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option>
+                <option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option>
+                <option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+                <option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option>
+                <option>SE</option><option>TO</option>
+            </select>
+        </label>
+        <label class="field span-2">
+            <span>Endereço</span>
+            <input type="text" name="endereco" required placeholder="Rua, número, bairro">
+        </label>
+        <label class="field">
+            <span>Tipo de moradia</span>
+            <select name="moradia" required>
+                <option value="">Selecione</option>
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="sitio">Sítio / Chácara</option>
+            </select>
+        </label>
+        <label class="field">
+            <span>Possui quintal ou área externa?</span>
+            <select name="quintal" required>
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+        </label>
+        <label class="field">
+            <span>Já teve pets antes?</span>
+            <select name="experiencia">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+        </label>
+        <label class="field">
+            <span>Senha</span>
+            <input type="password" name="senha" required minlength="6" autocomplete="new-password">
+        </label>
+        <label class="field span-2">
+            <span>Confirmar senha</span>
+            <input type="password" name="confirmarSenha" required minlength="6" autocomplete="new-password">
+        </label>
+    </div>
+    <label class="checkbox-field">
+        <input type="checkbox" name="termos" required>
+        <span>Li e aceito os termos de adoção responsável do PetHome.</span>
+    </label>
+        <button type="submit" class="btn btn-primary btn-block">Criar conta de adotante</button>
+    </form>
+
+<!-- FORM INSTITUIÇÃO -->
+    <form class="cadastro-form" id="formInstituicao" data-tab-panel="instituicao" novalidate hidden>
+        <div class="form-grid">
+            <label class="field span-2">
+                <span>Nome da instituição</span>
+                <input type="text" name="nomeInstituicao" required>
+            </label>
+            <label class="field">
+                <span>CNPJ</span>
+                <input type="text" name="cnpj" required inputmode="numeric" placeholder="00.000.000/0000-00" maxlength="18">
+            </label>
+            <label class="field">
+                <span>Nome do responsável</span>
+                <input type="text" name="responsavel" required>
+            </label>
+        <label class="field">
+                <span>E-mail</span>
+                <input type="email" name="emailInstituicao" required autocomplete="email">
+        </label>
+        <label class="field">
+                <span>Telefone / WhatsApp</span>
+                <input type="tel" name="telefoneInstituicao" required placeholder="(00) 00000-0000">
+        </label>
+        <label class="field">
+            <span>Cidade</span>
+            <input type="text" name="cidadeInstituicao" required>
+        </label>
+        <label class="field">
+            <span>Estado</span>
+            <select name="estadoInstituicao" required>
+                <option value="">Selecione</option>
+                <option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option>
+                <option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option>
+                <option>MT</option><option>MS</option><option>MG</option><option>PA</option><option>PB</option>
+                <option>PR</option><option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+                <option>RS</option><option>RO</option><option>RR</option><option>SC</option><option>SP</option>
+                <option>SE</option><option>TO</option>
+            </select>
+        </label>
+        <label class="field span-2">
+            <span>Endereço</span>
+            <input type="text" name="enderecoInstituicao" required placeholder="Rua, número, bairro">
+        </label>
+        <label class="field">
+            <span>Site ou Instagram (opcional)</span>
+            <input type="text" name="site" placeholder="@instituicao ou site.com.br">
+        </label>
+        <label class="field">
+            <span>Nº de animais sob cuidado (aprox.)</span>
+            <input type="number" name="qtdAnimais" min="0">
+        </label>
+        <label class="field">
+            <span>Senha</span>
+            <input type="password" name="senhaInstituicao" required minlength="6" autocomplete="new-password">
+        </label>
+        <label class="field">
+            <span>Confirmar senha</span>
+            <input type="password" name="confirmarSenhaInstituicao" required minlength="6" autocomplete="new-password">
+        </label>
+        </div>
+    <label class="checkbox-field">
+        <input type="checkbox" name="termosInstituicao" required>
+        <span>Confirmo que represento oficialmente esta instituição e aceito os termos de parceria do PetHome.</span>
+        </label>
+    <button type="submit" class="btn btn-primary btn-block">Cadastrar instituição</button>
+    </form>
+</div>
+</div>
+
+<!-- MODAL DE PERFIL -->
+<div class="modal-overlay" id="modalPerfil" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="perfilTitulo">
+        <button type="button" class="modal-close" id="btnFecharPerfil" aria-label="Fechar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+
+    <div class="perfil-head">
+        <span class="perfil-avatar perfil-avatar-lg" id="perfilAvatarGrande"></span>
+        <div>
+            <span class="perfil-badge" id="perfilBadgeTipo">Adotante</span>
+            <h2 id="perfilTitulo">—</h2>
+            <p id="perfilSubtitulo">—</p>
+        </div>
+    </div>
+
+    <dl class="perfil-lista" id="perfilLista"></dl>
+
+    <div class="perfil-actions">
+        <button type="button" class="btn btn-ghost" id="btnEditarPerfil">Editar dados</button>
+        <button type="button" class="btn btn-light" id="btnSairPerfil" style="border:1px solid var(--mint-line);">Sair da conta</button>
+    </div>
+    </div>
+</div>
 
 <script src="script.js"></script>
 </body>

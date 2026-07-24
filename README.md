@@ -22,12 +22,12 @@
 > * Doações: Possibilidade de ajudar financeira ou materialmente os canis cadastrados.
 
 ## 🛠️ Tecnologias Utilizadas
-> * **Front-end:** React / JS / HTML5 & CSS3  
-
+> * **Front-end:** React / JS / HTML5 & CSS3
+> 
 > * **Back-end:**
-
-> * **Banco de Dados:** 
-
+> 
+> * **Banco de Dados:**
+>   
 > * **Autenticação:**
-
+>   
 > * **Pagamentos/Doações:**
